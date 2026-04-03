@@ -42,6 +42,7 @@
     "lint:fix": "biome lint --fix src/",
     "format": "biome format --write src/",
     "prepare": "git config core.hooksPath .githooks",
+    "postinstall": "bun run scripts/fix-mcp-exports.ts",
     "test": "bun test",
     "check:unused": "knip-bun",
     "health": "bun run scripts/health-check.ts",
